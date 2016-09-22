@@ -28,6 +28,110 @@
 			</div>
 		</div>
 
+		<div id="skills" class="header border_main_panel" ng-controller="skillsCtrl">
+			<label class="header_label">Skills</label>
+			<div id = "skills_main" class="section_container">
+				<div ng-repeat = "entry in model.skills">
+					<span>
+						<label class="sub_header_label" ng-click="entry.isExpanded = !entry.isExpanded">{{entry.heading}}</label>
+						<label class="sub_header_label right_align">{{entry.dates}}</label>
+					</span>
+					<div uib-collapse = "!entry.isExpanded">
+						<div ng-bind-html="entry.description"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="workExp" class="header border_main_panel" ng-controller="workExpCtrl">
+			<label class="header_label">Work Experience</label>
+			<div id = "workExp_main" class="section_container">
+				<div ng-repeat = "entry in model.workExp">
+					<span>
+						<label class="sub_header_label" ng-click="entry.isExpanded = !entry.isExpanded">{{entry.heading}}</label>
+						<label class="sub_header_label right_align">{{entry.dates}}</label>
+					</span>
+					<div uib-collapse = "!entry.isExpanded">
+						<div ng-bind-html="entry.description"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="techExp" class="header border_main_panel" ng-controller="techExpCtrl">
+			<label class="header_label">Technical Experience</label>
+			<div id = "techExp_main" class="section_container">
+				<div ng-repeat = "entry in model.techExp">
+					<span>
+						<label class="sub_header_label" ng-click="entry.isExpanded = !entry.isExpanded">{{entry.heading}}</label>
+						<label class="sub_header_label right_align">{{entry.dates}}</label>
+					</span>
+					<div uib-collapse = "!entry.isExpanded">
+						<div ng-bind-html="entry.description"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="projects" class="header border_main_panel" ng-controller="projectsCtrl">
+			<label class="header_label">Projects</label>
+			<div id = "projects_main" class="section_container">
+				<div ng-repeat = "entry in model.projects">
+					<span>
+						<label class="sub_header_label" ng-click="entry.isExpanded = !entry.isExpanded">{{entry.heading}}</label>
+						<label class="sub_header_label right_align">{{entry.dates}}</label>
+					</span>
+					<div uib-collapse = "!entry.isExpanded">
+						<div ng-bind-html="entry.description"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="volunteer" class="header border_main_panel" ng-controller="volunteerCtrl">
+			<label class="header_label">Volunteer</label>
+			<div id = "volunteer_main" class="section_container">
+				<div ng-repeat = "entry in model.volunteer">
+					<span>
+						<label class="sub_header_label" ng-click="entry.isExpanded = !entry.isExpanded">{{entry.heading}}</label>
+						<label class="sub_header_label right_align">{{entry.dates}}</label>
+					</span>
+					<div uib-collapse = "!entry.isExpanded">
+						<div ng-bind-html="entry.description"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="awards" class="header border_main_panel" ng-controller="awardsCtrl">
+			<label class="header_label">Awards</label>
+			<div id = "awards_main" class="section_container">
+				<div ng-repeat = "entry in model.awards">
+					<span>
+						<label class="sub_header_label" ng-click="entry.isExpanded = !entry.isExpanded">{{entry.heading}}</label>
+						<label class="sub_header_label right_align">{{entry.dates}}</label>
+					</span>
+					<div uib-collapse = "!entry.isExpanded">
+						<div ng-bind-html="entry.description"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="interests" class="header border_main_panel" ng-controller="interestsCtrl">
+			<label class="header_label">Interests</label>
+			<div id = "interests_main" class="section_container">
+				<div ng-repeat = "entry in model.interests">
+					<span>
+						<label class="sub_header_label" ng-click="entry.isExpanded = !entry.isExpanded">{{entry.heading}}</label>
+						<label class="sub_header_label right_align">{{entry.dates}}</label>
+					</span>
+					<div uib-collapse = "!entry.isExpanded">
+						<div ng-bind-html="entry.description"></div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!--
 		<div id="skills" ng-class="{opaque: !isSkillsActive}" ng-controller="skillsCtrl">Technical Skills</div>
 		<div id="workExp" ng-class="{opaque: !isWorkExpActive}" ng-controller="workExpCtrl">Work Experience</div>
