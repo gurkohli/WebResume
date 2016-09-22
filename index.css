@@ -1,0 +1,48 @@
+body {
+	margin: 10px;
+}
+
+p {
+	font-size: 14px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.opaque {
+	opacity: 0.2;
+}
+
+.header_label {
+	font-size: 25px;
+	padding-left: 10px;
+}
+
+.header {
+	padding: 10px;
+	display: inline-block;
+	width: 100%;
+}
+
+.sub_header_label {
+	font-size: 16px;
+}
+
+.border_main_panel {
+	border: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
+}
+
+.section_container {
+	border: solid #cccccc thin;
+    background-color: #fafafa;
+    padding: 5px 10px 5px 10px;
+}
+
+.right_align {
+	float: right;
+}
+label {
+	font-weight: normal !important;
+}

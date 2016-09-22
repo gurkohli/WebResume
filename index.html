@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Resume</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/index.css">
+
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+		<script src = "//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-sanitize.js"></script>
+		<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
+
+    	<script src = "/main.js"></script>
+	</head>
+	<body ng-app = "myResume" class="ng-scope" ng-controller="rootCtrl">
+		<div id="education" class="header border_main_panel" ng-controller="educationCtrl">
+			<label class="header_label">Education</label>
+			<div id = "education_main" class="section_container">
+				<div ng-repeat = "entry in model.education">
+					<span>
+						<label class="sub_header_label" ng-click="entry.isExpanded = !entry.isExpanded">{{entry.heading}}</label>
+						<label class="sub_header_label right_align">{{entry.dates}}</label>
+					</span>
+					<div uib-collapse = "!entry.isExpanded">
+						<div ng-bind-html="entry.description"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--
+		<div id="skills" ng-class="{opaque: !isSkillsActive}" ng-controller="skillsCtrl">Technical Skills</div>
+		<div id="workExp" ng-class="{opaque: !isWorkExpActive}" ng-controller="workExpCtrl">Work Experience</div>
+		<div id="technical" ng-class="{opaque: !technicalActive}" ng-controller="technicalCtrl">Technical Experience</div>
+		<div id="projects" ng-class="{opaque: !projects}" ng-controller="projectsCtrl">Project Experience</div>
+		<div id="volunteer" ng-class="{opaque: !isPDActive}" ng-controller="volunteerCtrl">Community Engagement</div>
+		<div id="awards" ng-class="{opaque: !isPDActive}" ng-co</tr>ntroller="awardsCtrl">Awards</div>
+		<div id="interests" ng-class="{opaque: !isPDActive}" ng-controller="interestsCtrl">Interests</p>-->
+	</body>
+</html>
