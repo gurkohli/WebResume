@@ -1,48 +1,133 @@
 body {
+	background-image: url("www/header_backgr.jpg");
 	margin: 10px;
+	overflow: hidden;
 }
 
-p {
-	font-size: 14px;
-    padding-left: 10px;
-    margin-bottom: 5px;
+span {
+	display: block;
+	vertical-align: middle;
+	padding: 5px;
 }
-
-.opaque {
-	opacity: 0.2;
-}
-
-.header_label {
-	font-size: 25px;
-	padding-left: 10px;
-}
-
 .header {
-	padding: 10px;
-	display: inline-block;
+	color: white;
 	width: 100%;
+	height: 100px;	/*Change .menu and .main height if this changes*/
 }
 
-.sub_header_label {
+.menu {
+	color: white;
+	width: 25%;
+	height: calc(100% - 100px);
+	float: left;
+	display: flex;
+	align-items: flex-end;
+}
+
+.main {
+	background-color: whitesmoke;
+	width: 75%;
+	height: calc(100% - 100px);
+	float: right;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding-top: 10px;
+}
+
+.myname {
+	font-size: 40px;
+    font-weight: 200;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+}
+
+.hyperlink {
+	color: white;
+}
+
+.hyperlink:hover {
+	color: grey;
+}
+
+.hyperlink:visited,{
+	color: white;
+}
+
+.pointer {
+	cursor: pointer;
+}
+.contact {
+	font-weight: 200;
 	font-size: 16px;
+	margin-top: 10px;
+	text-align: center;
 }
 
-.border_main_panel {
-	border: black;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 5px;
+.icon {
+	padding: 0px;
+	padding-right: 5px;
+}
+.subheader-container {
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 2px;
+	margin-bottom: 5%;
+	padding: 0px;
 }
 
-.section_container {
-	border: solid #cccccc thin;
-    background-color: #fafafa;
-    padding: 5px 10px 5px 10px;
+.subheader {
+	font-size: 35px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 10px;
+	font-weight: 200;
 }
 
-.right_align {
+.entry-container {
+
+}
+
+.entry-list {
+	margin-bottom: 10px;
+}
+.entry-title {
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0px;
+}
+
+.entry-dates {
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0px;
+	margin-top: 2px;
+}
+
+.entry-description {
+	padding-left: 7%;
+	padding-bottom: 10px;
+	text-align: justify;
+	font-weight: 200;
+}
+
+.table-cell {
+	padding: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-align: center;
+}
+
+.about-me {
+	padding-left: 20px;
+	padding-right: 20px;
+	text-align: justify;
+	font-weight: 200;
+}
+.right-align {
 	float: right;
 }
-label {
-	font-weight: normal !important;
+
+.block {
+	display: block;
 }
