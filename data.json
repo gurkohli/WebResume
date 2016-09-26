@@ -1,1 +1,88 @@
-{"education":[{"heading":"Simon Fraser University, Burnaby, BC","dates":"September 2013 - Present","description":"<p>4<sup>th</sup> year Computer Engineering Student (Bachelor of Applied Science)</p>"}]}
+{
+   "education":[
+      {
+         "heading":"Simon Fraser University, Burnaby, BC",
+         "dates":"Sep 2013 - Present",
+         "description":"4<sup>th</sup> year Computer Engineering Student (Bachelor of Applied Science)"
+      },
+      {
+         "heading":"Fraser International College, Burnaby, BC",
+         "dates":"Sep 2012 - Aug 2013",
+         "description":"University Transfer Program (UTP) Stage II – Engineering Science<br>Completed with a GPA of 4.02"
+      }
+   ],
+   "skills":[
+      [
+         "C",
+         "C++",
+         "Java",
+         "JavaScript"
+      ],
+      [
+         "Python",
+         "Ruby",
+         "Swift",
+         "HTML"
+      ],
+      [
+         "CSS",
+         "jQuery",
+         "VHDL",
+         "Assembly"
+      ]
+   ],
+   "work":[
+      {
+         "position":"Systems Administrator",
+         "dates":"Sep 2016 - Present / May - Dec 2015",
+         "employer":"CJSF Radio",
+         "description":"<p>Single-handedly managed local network and computer systems by troubleshooting issues such as component damages, software and hardware issues, networking issues, updating Windows and Linux based servers/ workstations and providing general IT support, keeping the network running smoothly and efficiently</p><p>Setup and installation of a new Windows PC to their on air studio without any downtime to the broadcast</p><p>Preparing new computers by installing updated software and setting up personalized settings and schedules to replace older computers</p>"
+      },
+      {
+         "position":"Agile Developer (Co-op)",
+         "dates":"Sep 2014 – Apr 2015",
+         "employer":"SAP Canada",
+         "description":"<p>Worked on SAP Lumira Suite, developing and testing software features by using JAVA as well as JavaScript along with the team to increase software functionality and efficiency</p><p>Fixed a number of challenging high and very high priority bugs by implementing testing strategies to find the most efficient and robust solution</p><p>Coordinated with other teams to keep feature integrity, transfer knowledge, fix crossteam bugs and offer support and testing to keep inter-team communication in check</p>"
+      }
+   ],
+   "projects":[
+      {
+         "title":"Project LASER",
+         "dates":"May – Aug 2013",
+         "course":"Applied Sciences, Technology & Society (ENSC 106), SFU",
+         "description":"<p>Led a team of four to build a prototype device to switch on/off appliances by a laser beam</p><p>Delegated subroutines to team members and coordinated project workflow to ensure utmost efficiency and perfection</p><p>Improved technical skills such as soldering, circuit designing by working with various electronic components to effectively create a functioning prototype</p>"
+      }
+   ],
+   "volunteer":[
+   	  {
+   	  	 "position":"Peer Educator",
+   	  	 "dates":"May - Dec 2013",
+   	  	 "location":"Fraser International College, Burnaby, BC",
+   	  	 "description":"<p>Tutored fellow students in subjects including Physics, Math, C++, Python, and Microeconomics and helped in proofreading.</p><p>Enhanced communication, problem-solving and presentation skills by conversing with and tutoring students from different communities and different learning curves.</p>"
+   	  },
+   	  {
+   	  	 "position":"Peer Mentor",
+   	  	 "dates":"May - Dec 2013",
+   	  	 "location":"Fraser International College, Burnaby, BC",
+   	  	 "description":"<p>Mentored to and directed a mentee in both academic as well as non-academic related issues</p><p>Gained valuable management skills and experiences by listening to and analyzing mentee problems to identify an effective solutions</p>"
+   	  },
+   	  {
+   	  	 "position":"New Students Orientation Leader",
+   	  	 "dates":"September 2013",
+   	  	 "location":"Fraser International College, Burnaby, BC",
+   	  	 "description":"<p>Managed a group of 25 students and helped them to get familiarized with Canadian education systems and university life</p><p>Greatly enhanced communication skills and boosted self-confidence after being able to manage a large group and talking with people from different cultures and backgrounds</p>"
+   	  }
+   ],
+   "awards":[
+   	  {
+   	  	 "title":"President’s Honor Roll",
+   	  	 "dates":"September 2015",
+   	  	 "location":"Simon Fraser University"
+   	  },
+   	  {
+   	  	 "title":"International Summit Scholarship for Transfer Students",
+   	  	 "dates":"September 2013",
+   	  	 "location":"Simon Fraser University"
+   	  }
+   ]
+}

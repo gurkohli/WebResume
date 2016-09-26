@@ -3,11 +3,7 @@ var myResume = angular.module('myResume', ['ngAnimate', 'ngSanitize', 'ui.bootst
 myResume.controller("rootCtrl", function($scope, $http) {
 	$http.get('data.json')
 			.then(function(res) {
-				$scope.model = res.data
+				$scope.model = res.data;
 			})
 
-});
-
-myResume.controller("educationCtrl", function($scope) {
-	
 });
