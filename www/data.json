@@ -33,12 +33,14 @@
    ],
    "work":[
       {
+         "printable":"true",
          "position":"Systems Administrator",
          "dates":"Sep 2016 - Present / May - Dec 2015",
          "employer":"CJSF Radio",
          "description":"<p>Single-handedly managed local network and computer systems by troubleshooting issues such as component damages, software and hardware issues, networking issues, updating Windows and Linux based servers/ workstations and providing general IT support, keeping the network running smoothly and efficiently</p><p>Setup and installation of a new Windows PC to their on air studio without any downtime to the broadcast</p><p>Preparing new computers by installing updated software and setting up personalized settings and schedules to replace older computers</p>"
       },
       {
+         "printable":"true",
          "position":"Agile Developer (Co-op)",
          "dates":"Sep 2014 – Apr 2015",
          "employer":"SAP Canada",
@@ -47,6 +49,14 @@
    ],
    "projects":[
       {
+         "printable":"true",
+         "title":"<a href='https://github.com/gurkohli/medicalLogger'>Medical Patient Data Logger</a>",
+         "dates":"August 2016",
+         "course":"",
+         "description":"<p>Implemented an AngularJS web application front end interface that serves as a framework for software professionals working towards creating applications that log patient data.</p><p>Developed a template-based form input allowing doctors to input the patient's personal details and diagnosis details and view the data at the end in a summary layout.</p><p>Integrated Bootstrap CSS to implement an interactive and responsive user interface.</p>"
+      },
+      {
+         "printable":"true",
          "title":"Project LASER",
          "dates":"May – Aug 2013",
          "course":"Applied Sciences, Technology & Society (ENSC 106), SFU",
@@ -55,6 +65,7 @@
    ],
    "volunteer":[
    	  {
+          "printable":"true",
    	  	 "position":"Peer Educator",
    	  	 "dates":"May - Dec 2013",
    	  	 "location":"Fraser International College, Burnaby, BC",
@@ -67,6 +78,7 @@
    	  	 "description":"<p>Mentored to and directed a mentee in both academic as well as non-academic related issues</p><p>Gained valuable management skills and experiences by listening to and analyzing mentee problems to identify an effective solutions</p>"
    	  },
    	  {
+          "printable":"true",
    	  	 "position":"New Students Orientation Leader",
    	  	 "dates":"September 2013",
    	  	 "location":"Fraser International College, Burnaby, BC",

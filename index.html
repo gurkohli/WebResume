@@ -1,9 +1,10 @@
 <html>
 	<head>
-		<title>Resume</title>
+		<title>Website of Gur Kohli</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="/index.css">
+		<link rel="stylesheet" type="text/css" media='screen' href="/index.css">
+		<link rel='stylesheet' type="text/css" media='print' href='/print.css' />
 
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
@@ -24,9 +25,12 @@
 			</div>
 		</div>
 		<div class = "menu">
-			<div>
-				<label class = "subheader">About Me! </label>
+			<div class = "menu_entry">
+				<label class = "subheader">About Me!</label>
 				<span class = "about-me"><p>I am a fourth year Computer Engineering student at Simon Fraser University with an innate capacity for problem-solving driven by my earnest desire to learn. My genuine curiosity enables me to come up with efficient and interesting solutions to problems at hand.</p>
+			</div>
+			<div class = "menu_entry">
+				<a href="javascript:window.print()" class="hyperlink"><label id = "resume_download" class="pointer">Print Resume</label></a>
 			</div>
 		</div>
 		<div class = "main">
@@ -37,15 +41,15 @@
 				</div>
 			</div>
 			<div id="work" class="subheader-container">
-				<label class="subheader">Work Experiences</label>
+				<label class="subheader margin-print">Work Experiences</label>
 				<div class="entry-container">
-					<div class = "entry-list" ng-repeat = "entry in model.work">
+					<div class = "entry-list" ng-class="entry.printable == 'true' ? '' : 'no-print'" ng-repeat = "entry in model.work">
 						<span>
 							<label class="entry-title">{{entry.position}}</label>
 							<label class="entry-dates right-align">{{entry.dates}}</label>
 							<label class="entry-title block">{{entry.employer}}</label>
 						</span>
-						<span></span>
+						<span class = "no-print"></span>
 						<div class="entry-description" ng-bind-html="entry.description"></div>
 					</div>
 				</div>
@@ -53,13 +57,13 @@
 			<div id="projects" class="subheader-container">
 				<label class="subheader">Project Experiences</label>
 				<div class="entry-container">
-					<div class = "entry-list" ng-repeat = "entry in model.projects">
+					<div class = "entry-list" ng-class="entry.printable == 'true' ? '' : 'no-print'" ng-repeat = "entry in model.projects">
 						<span>
-							<label class="entry-title">{{entry.title}}</label>
+							<label class="entry-title" data-ng-bind-html="trustAsHtml(entry.title)"></label>
 							<label class="entry-dates right-align">{{entry.dates}}</label>
-							<label class="entry-title block">{{entry.course}}</label>
+							<label class="entry-title block" data-ng-bind-html="trustAsHtml(entry.course)"></label>
 						</span>
-						<span></span>
+						<span class = "no-print"></span>
 						<div class="entry-description" ng-bind-html="entry.description"></div>
 					</div>
 				</div>
@@ -67,13 +71,13 @@
 			<div id="volunteer" class="subheader-container">
 				<label class="subheader">Community Engagement</label>
 				<div class="entry-container">
-					<div class = "entry-list" ng-repeat = "entry in model.volunteer">
+					<div class = "entry-list" ng-class="entry.printable == 'true' ? '' : 'no-print'" ng-repeat = "entry in model.volunteer">
 						<span>
 							<label class="entry-title">{{entry.position}}</label>
 							<label class="entry-dates right-align">{{entry.dates}}</label>
 							<label class="entry-title block">{{entry.location}}</label>
 						</span>
-						<span></span>
+						<span class = "no-print"></span>
 						<div class="entry-description" ng-bind-html="entry.description"></div>
 					</div>
 				</div>
