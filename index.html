@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Website of Gur Kohli</title>
+		<title>My Resume</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" media='screen' href="/index.css">
@@ -17,6 +17,7 @@
 	<body ng-app = "myResume" class="ng-scope" ng-controller="rootCtrl">
 		<div class = "header">
 			<label class="myname">Gur Kohli</label>
+			<label class="website-label">www.gurkohli.com</label>
 			<div class="row-fluid">
 				<a class ="hyperlink" href="https://github.com/gurkohli/"><label class="col-xs-3 contact pointer"><i class="fa fa-github icon pointer" aria-hidden="true"></i>gurkohli</label></a>
 				<a class ="hyperlink" href="mailto:gkohli@sfu.ca"><label class="col-xs-3 contact pointer"><i class="fa fa-envelope-o icon pointer" aria-hidden="true"></i>gkohli@sfu.ca</label></a>
@@ -25,23 +26,38 @@
 			</div>
 		</div>
 		<div class = "menu">
+			
 			<div class = "menu_entry">
-				<label class = "subheader">About Me!</label>
-				<span class = "about-me"><p>I am a fourth year Computer Engineering student at Simon Fraser University with an innate capacity for problem-solving driven by my earnest desire to learn. My genuine curiosity enables me to come up with efficient and interesting solutions to problems at hand.</p>
+				<a smooth-scroll link="#skills"><label class = "subheader pointer">Skills</label></a>
 			</div>
 			<div class = "menu_entry">
-				<a href="javascript:window.print()" class="hyperlink"><label id = "resume_download" class="pointer">Print Resume</label></a>
+				<a smooth-scroll link="#work"><label class = "subheader pointer">Work Experience</label></a>
+			</div>
+			<div class = "menu_entry">
+				<a smooth-scroll link="#projects"><label class = "subheader pointer">Project Experience</label></a>
+			</div>
+			<div class = "menu_entry">
+				<a smooth-scroll link="#volunteer"><label class = "subheader pointer">Community Engagement</label></a>
+			</div>
+			<div class = "menu_entry">
+				<a smooth-scroll link="#awards"><label class = "subheader pointer">Awards</label></a>
+			</div>
+			<div class = "menu_entry">
+				<a smooth-scroll link="#education"><label class = "subheader pointer">Education</label></a>
+			</div>
+			<div class = "menu_entry text-center-align">
+				<a href="javascript:window.print()" class="hyperlink"><label id = "resume_download" class="subheader pointer">Print Resume</label></a>
 			</div>
 		</div>
-		<div class = "main">
+		<div id="main" class = "main">
 			<div id="skills" class="subheader-container container-fluid">
-				<label class="subheader">Programming Skills</label>
+				<label class="subheader-main">Programming Skills</label>
 				<div class="row-fluid" ng-repeat = "rows in model.skills">
 					<div ng-repeat = "entry in rows" class="col-xs-3 table-cell entry-title">{{entry}}</div>
 				</div>
 			</div>
 			<div id="work" class="subheader-container">
-				<label class="subheader margin-print">Work Experiences</label>
+				<label class="subheader-main margin-print">Work Experiences</label>
 				<div class="entry-container">
 					<div class = "entry-list" ng-class="entry.printable == 'true' ? '' : 'no-print'" ng-repeat = "entry in model.work">
 						<span>
@@ -55,7 +71,7 @@
 				</div>
 			</div>
 			<div id="projects" class="subheader-container">
-				<label class="subheader">Project Experiences</label>
+				<label class="subheader-main">Project Experiences</label>
 				<div class="entry-container">
 					<div class = "entry-list" ng-class="entry.printable == 'true' ? '' : 'no-print'" ng-repeat = "entry in model.projects">
 						<span>
@@ -69,7 +85,7 @@
 				</div>
 			</div>
 			<div id="volunteer" class="subheader-container">
-				<label class="subheader">Community Engagement</label>
+				<label class="subheader-main">Community Engagement</label>
 				<div class="entry-container">
 					<div class = "entry-list" ng-class="entry.printable == 'true' ? '' : 'no-print'" ng-repeat = "entry in model.volunteer">
 						<span>
@@ -83,7 +99,7 @@
 				</div>
 			</div>
 			<div id="awards" class="subheader-container">
-				<label class="subheader">Awards</label>
+				<label class="subheader-main">Awards</label>
 				<div class="entry-container">
 					<div class = "entry-list" ng-repeat = "entry in model.awards">
 						<span>
@@ -95,7 +111,7 @@
 				</div>
 			</div>
 			<div id="education" class="subheader-container">
-				<label class="subheader">Education</label>
+				<label class="subheader-main">Education</label>
 				<div class="entry-container">
 					<div class = "entry-list" ng-repeat = "entry in model.education">
 						<span>

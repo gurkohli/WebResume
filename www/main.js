@@ -10,3 +10,21 @@ myResume.controller("rootCtrl", function($scope, $http, $sce) {
     	return $sce.trustAsHtml(string);
 	};
 });
+
+myResume.directive('smoothScroll', function() {
+  return {
+    restrict: 'A',
+    link: function(scope, $elem, attrs) {
+      var idToScroll = attrs.link;
+      $elem.on('click', function() {
+        var $target = $(idToScroll);
+        if ($target) {
+	        var mainTop = $("#main").offset().top
+	        var targetTop = $target.offset().top
+	        var position = $("#main").scrollTop() + targetTop - mainTop
+        	$("#main").animate({scrollTop: position}, "slow");
+        }
+      });
+    }
+  }
+});

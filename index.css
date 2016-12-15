@@ -24,9 +24,10 @@ span {
 .menu {
 	color: white;
 	width: 25%;
-	height: calc(100% - 100px);
 	float: left;
-	padding-top: 50px;
+	padding-top: 25px;
+	padding-right: 25px;
+	height: calc(100% - 100px);
 	display: table;
 }
 
@@ -37,12 +38,11 @@ span {
 	float: right;
 	overflow-y: auto;
 	overflow-x: hidden;
-	padding-top: 10px;
 }
 
 .menu_entry {
-	display: table-row-group;
-	text-align: center;
+	display: table-row;
+	text-align: right;
 }
 
 .myname {
@@ -53,8 +53,14 @@ span {
     margin: 0px;
 }
 
+.website-label {
+	text-align: center;
+	font-weight: 200;
+	width: 100%;
+}
+
 .hyperlink:hover {
-	color: grey;
+	color: grey !important;
 }
 
 .hyperlink, .hyperlink:visited, .hyperlink:active, .hyperlink:focus {
@@ -84,6 +90,13 @@ span {
 }
 
 .subheader {
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 10px;
+	font-weight: 200;
+}
+
+.subheader-main {
 	font-size: 35px;
 	width: 100%;
 	text-align: center;
@@ -131,10 +144,15 @@ span {
 	text-align: justify;
 	font-weight: 200;
 }
+
 .right-align {
 	float: right;
 }
 
 .block {
 	display: block;
+}
+
+.text-center-align {
+	text-align: center;
 }

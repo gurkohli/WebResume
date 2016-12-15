@@ -40,6 +40,12 @@ a:link:after, a:visited:after {
     margin: 0px;
 }
 
+.website-label {
+	text-align: center;
+	font-weight: 200;
+	width: 100%;
+}
+
 .hyperlink {
 	color: black;
 }
