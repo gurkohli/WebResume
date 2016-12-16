@@ -15,6 +15,7 @@
     	<script src = "/www/main.js"></script>
 	</head>
 	<body ng-app = "myResume" class="ng-scope" ng-controller="rootCtrl">
+		<div id="background" class = "no-print" style="width: 100%; height:100%"> </div>
 		<div class = "header">
 			<label class="myname">Gur Kohli</label>
 			<label class="website-label">www.gurkohli.com</label>
@@ -25,30 +26,32 @@
 				<a class ="hyperlink" href="https://ca.linkedin.com/in/gurkohli"><label class="col-xs-3 contact pointer"><i class="fa fa-linkedin-square icon pointer" aria-hidden="true"></i>gurkohli</label></a>
 			</div>
 		</div>
+		<hr>
 		<div class = "menu">
 			
 			<div class = "menu_entry">
-				<a smooth-scroll link="#skills"><label class = "subheader pointer">Skills</label></a>
+				<a class ="hyperlink" smooth-scroll link="#skills"><label class = "subheader pointer">Skills</label></a>
 			</div>
 			<div class = "menu_entry">
-				<a smooth-scroll link="#work"><label class = "subheader pointer">Work Experience</label></a>
+				<a class ="hyperlink" smooth-scroll link="#work"><label class = "subheader pointer">Work Experiences</label></a>
 			</div>
 			<div class = "menu_entry">
-				<a smooth-scroll link="#projects"><label class = "subheader pointer">Project Experience</label></a>
+				<a class ="hyperlink" smooth-scroll link="#projects"><label class = "subheader pointer">Project Experiences</label></a>
 			</div>
 			<div class = "menu_entry">
-				<a smooth-scroll link="#volunteer"><label class = "subheader pointer">Community Engagement</label></a>
+				<a class ="hyperlink" smooth-scroll link="#volunteer"><label class = "subheader pointer">Community Engagement</label></a>
 			</div>
 			<div class = "menu_entry">
-				<a smooth-scroll link="#awards"><label class = "subheader pointer">Awards</label></a>
+				<a class ="hyperlink" smooth-scroll link="#awards"><label class = "subheader pointer">Awards</label></a>
 			</div>
 			<div class = "menu_entry">
-				<a smooth-scroll link="#education"><label class = "subheader pointer">Education</label></a>
+				<a class ="hyperlink" smooth-scroll link="#education"><label class = "subheader pointer">Education</label></a>
 			</div>
 			<div class = "menu_entry text-center-align">
 				<a href="javascript:window.print()" class="hyperlink"><label id = "resume_download" class="subheader pointer">Print Resume</label></a>
 			</div>
 		</div>
+		<div id="vb" class="vertical_border"></div>
 		<div id="main" class = "main">
 			<div id="skills" class="subheader-container container-fluid">
 				<label class="subheader-main">Programming Skills</label>
