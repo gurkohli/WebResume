@@ -35,14 +35,14 @@
       {
          "printable":"true",
          "position":"Systems Administrator",
-         "dates":"Sep 2016 - Present / May - Dec 2015",
+         "dates":"May - Dec 2015, Sep 2016 - Present",
          "employer":"CJSF Radio",
          "description":"<p>Single-handedly managed local network and computer systems by troubleshooting issues such as component damages, software and hardware issues, networking issues, updating Windows and Linux based servers/ workstations and providing general IT support, keeping the network running smoothly and efficiently</p><p>Setup and installation of a new Windows PC to their on air studio without any downtime to the broadcast</p><p>Preparing new computers by installing updated software and setting up personalized settings and schedules to replace older computers</p>"
       },
       {
          "printable":"true",
          "position":"Agile Developer (Co-op)",
-         "dates":"Sep 2014 – Apr 2015",
+         "dates":"Sep 2014 - Apr 2015",
          "employer":"SAP Canada",
          "description":"<p>Worked on SAP Lumira Suite, developing and testing software features by using JAVA as well as JavaScript along with the team to increase software functionality and efficiency</p><p>Fixed a number of challenging high and very high priority bugs by implementing testing strategies to find the most efficient and robust solution</p><p>Coordinated with other teams to keep feature integrity, transfer knowledge, fix crossteam bugs and offer support and testing to keep inter-team communication in check</p>"
       }
@@ -50,15 +50,31 @@
    "projects":[
       {
          "printable":"true",
+         "title":"<a href='https://github.com/the-jpeg-benders/multi-face-shuffle-with-openface'>Multi-face Shuffle with OpenFace</a>",
+         "dates":"Sep - Dec 2016",
+         "roles":"Effective Roles: Developer",
+         "course":"Multimedia Communications Engineering (ENSC 424), SFU",
+         "description":"<p>Developed majority of project aimed towards detecting faces in a given image and shuffling them around to create a resulting image with the faces interchanged</p><p>Performed significant improvements on the code after development by running performance testing and refactoring resulting in faster and cleaner code</p>"
+      },
+      {
+         "printable":"true",
+         "title":"<a href='https://github.com/simondevs/aliveSFU'>AliveSFU, Health and Fitness (iOS)</a>",
+         "dates":"Sep - Dec 2016",
+         "roles":"Effective Roles: Project Manager, Agile Developer, UI Designer, Scrum Master",
+         "course":"Software Engineering I (CMPT 275), SFU",
+         "description":"<p>Performed managerial duties by running effective team meetings, delegating responsibilities and maintaining scrum board resulting in a faster and smoother software development</p><p>Developed the application user interface following Apple iOS design guidelines to ensure a clear and responsive UI</p><p>Improved problem-solving skills by writing clean code under tight deadlines and assisting team members resulting in timely deliverables</p> "
+      },
+      {
+         "printable":"true",
          "title":"<a href='https://github.com/gurkohli/medicalLogger'>Medical Patient Data Logger</a>",
          "dates":"August 2016",
-         "course":"",
-         "description":"<p>Implemented an AngularJS web application front end interface that serves as a framework for software professionals working towards creating applications that log patient data.</p><p>Developed a template-based form input allowing doctors to input the patient's personal details and diagnosis details and view the data at the end in a summary layout.</p><p>Integrated Bootstrap CSS to implement an interactive and responsive user interface.</p>"
+         "course":"Self-Directed",
+         "description":"<p>Implemented an AngularJS web application front end interface that serves as a framework for software professionals working towards creating applications that log patient data.</p><p>Developed a template-based form input allowing doctors to input the patient's personal details and diagnosis details and view the data at the end in a summary layout.</p><p>Integrated Bootstrap CSS to implement an interactive and responsive user interface.</p><br>"
       },
       {
          "printable":"true",
          "title":"Project LASER",
-         "dates":"May – Aug 2013",
+         "dates":"May - Aug 2013",
          "course":"Applied Sciences, Technology & Society (ENSC 106), SFU",
          "description":"<p>Led a team of four to build a prototype device to switch on/off appliances by a laser beam</p><p>Delegated subroutines to team members and coordinated project workflow to ensure utmost efficiency and perfection</p><p>Improved technical skills such as soldering, circuit designing by working with various electronic components to effectively create a functioning prototype</p>"
       }
@@ -88,12 +104,10 @@
    "awards":[
    	  {
    	  	 "title":"President’s Honor Roll",
-   	  	 "dates":"September 2015",
    	  	 "location":"Simon Fraser University"
    	  },
    	  {
    	  	 "title":"International Summit Scholarship for Transfer Students",
-   	  	 "dates":"September 2013",
    	  	 "location":"Simon Fraser University"
    	  }
    ]

@@ -59,6 +59,7 @@
 					<div ng-repeat = "entry in rows" class="col-xs-3 table-cell entry-title">{{entry}}</div>
 				</div>
 			</div>
+			<hr class="mobile-separator">
 			<div id="work" class="subheader-container">
 				<label class="subheader-main margin-print">Work Experiences</label>
 				<div class="entry-container">
@@ -73,6 +74,7 @@
 					</div>
 				</div>
 			</div>
+			<hr class="mobile-separator">
 			<div id="projects" class="subheader-container">
 				<label class="subheader-main">Project Experiences</label>
 				<div class="entry-container">
@@ -82,11 +84,13 @@
 							<label class="entry-dates right-align">{{entry.dates}}</label>
 							<label class="entry-title block" data-ng-bind-html="trustAsHtml(entry.course)"></label>
 						</span>
+						<p class="entry-roles">{{entry.roles}}</p>
 						<span class = "no-print"></span>
 						<div class="entry-description" ng-bind-html="entry.description"></div>
 					</div>
 				</div>
 			</div>
+			<hr class="mobile-separator">
 			<div id="volunteer" class="subheader-container">
 				<label class="subheader-main">Community Engagement</label>
 				<div class="entry-container">
@@ -101,6 +105,7 @@
 					</div>
 				</div>
 			</div>
+			<hr class="mobile-separator">
 			<div id="awards" class="subheader-container">
 				<label class="subheader-main">Awards</label>
 				<div class="entry-container">
@@ -113,6 +118,7 @@
 					</div>
 				</div>
 			</div>
+			<hr class="mobile-separator">
 			<div id="education" class="subheader-container">
 				<label class="subheader-main">Education</label>
 				<div class="entry-container">
