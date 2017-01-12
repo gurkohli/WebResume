@@ -1,0 +1,48 @@
+.main label {
+	width:20%;
+	padding-left:50px;
+	padding-top:20px;
+}
+
+.main textarea {
+	width:75%;
+	color: black;
+}
+
+.main input {
+	width:75%;
+	color: black;
+}
+
+.main button {
+	width: 50%;
+	color: black;
+	margin-left: 25%;
+}
+
+.entry {
+	padding:20px;
+	display: flex;
+}
+
+.main {
+	/*background-color: whitesmoke;*/
+	color: white;
+	width: 100%;
+	height: calc(100% - 150px);
+	overflow-y: auto;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.paragraph {
+	min-height: 250px;
+}
+
+#to {
+	min-height:150px;
+}
+
+.result {
+	display: none;
+}

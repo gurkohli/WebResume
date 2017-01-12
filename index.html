@@ -3,8 +3,8 @@
 		<title>My Resume</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" media='screen' href="/index.css">
-		<link rel='stylesheet' type="text/css" media='print' href='/print.css' />
+		<link rel="stylesheet" type="text/css" media='screen' href="www/main/CSS/index.css">
+		<link rel='stylesheet' type="text/css" media='print' href='www/main/CSS/print.css' />
 
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
@@ -12,20 +12,11 @@
 		<script src = "//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-sanitize.js"></script>
 		<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
 
-    	<script src = "/www/main.js"></script>
+    	<script src = "www/main/JS/main.js"></script>
 	</head>
 	<body ng-app = "myResume" class="ng-scope" ng-controller="rootCtrl">
 		<div id="background" class = "no-print" style="width: 100%; height:100%"> </div>
-		<div class = "header">
-			<label class="myname">Gur Kohli</label>
-			<label class="website-label">www.gurkohli.com</label>
-			<div class="row-fluid">
-				<a class ="hyperlink" href="https://github.com/gurkohli/"><label class="col-xs-3 contact pointer"><i class="fa fa-github icon pointer" aria-hidden="true"></i>gurkohli</label></a>
-				<a class ="hyperlink" href="mailto:gkohli@sfu.ca"><label class="col-xs-3 contact pointer"><i class="fa fa-envelope-o icon pointer" aria-hidden="true"></i>gkohli@sfu.ca</label></a>
-				<a class ="hyperlink" href="tel:+1-604-340-8630"><label class="col-xs-3 contact pointer"><i class="fa fa-mobile icon pointer" aria-hidden="true"></i>+1 604-340-8630</label></a>
-				<a class ="hyperlink" href="https://ca.linkedin.com/in/gurkohli"><label class="col-xs-3 contact pointer"><i class="fa fa-linkedin-square icon pointer" aria-hidden="true"></i>gurkohli</label></a>
-			</div>
-		</div>
+		<div class = "header" ng-include="'www/core/header.html'"></div>
 		<hr>
 		<div class = "menu">
 			

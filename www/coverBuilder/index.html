@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>Cover Letter Builder</title>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" media='screen' href="/www/main/CSS/index.css">
+		<link rel="stylesheet" type="text/css" media='screen' href="CSS/style.css">
+		<link rel='stylesheet' type="text/css" media='print' href='/www/main/CSS/print.css' />
+		<link rel="stylesheet" type="text/css" media='print' href="CSS/style_print.css">
+
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-animate.js"></script>
+		<script src = "//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-sanitize.js"></script>
+		<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.14.3.js"></script>
+
+    	<script src = "JS/coverBuilder.js"></script>
+	</head>
+	<body ng-app = "coverBuilder" class="ng-scope" ng-controller="rootCtrl">
+		<div id="background" class = "no-print" style="width: 100%; height:100%"> </div>
+		<div class = "header" ng-include="'/www/core/header.html'"></div>
+		<hr>
+		<div id="main" class = "main">
+			<div id="to" class="entry"><label>To:</label><textarea ng-model="$parent.toField"></textarea></div>
+			<div id="subject" class="entry"><label>Subject:</label><input ng-model="$parent.subject"></input></div>
+			<div id="lastname" class="entry"><label>Last Name of Recruiter:</label><input ng-model="$parent.lastname"></input></div>
+			<div id="para1" class="entry paragraph"><label>First Paragraph:</label><textarea ng-model="$parent.para1"></textarea></div>
+			<div id="para2" class="entry paragraph"><label>Second Paragraph:</label><textarea ng-model="$parent.para2"></textarea></div>
+			<div id="para3" class="entry paragraph"><label>Last Paragraph:</label><textarea ng-model="$parent.para3"></textarea></div>
+			<div id="submit"><button onclick="javascript:window.print()">Build Cover Letter</button></div>
+		</div>
+		<div id="result" class="result">
+			<br>
+			<div id="result_date"><label>{{date | date:'longDate'}}</label></div>
+			<br>
+			<div id="result_to" class="multiline"><label ng-bind="$parent.toField"></label></div>
+			<br>
+			<div id="result_subject"><label ng-bind="$parent.subject"></label></div>
+			<br>
+			<div id="result_salutation"><label>Dear {{$parent.lastname}}:</label></div>
+			<br>
+			<div id="result_para1"><label ng-bind="$parent.para1"></label></div>
+			<br>
+			<div id="result_para2"><label ng-bind="$parent.para2"></label></div>
+			<br>
+			<div id="result_para3"><label ng-bind="$parent.para3"></label></div>
+			<br>
+			<div id="result_signature1"><label>Yours sincerely</label></div>
+			<br>
+			<div id="result_signature2"><label>Gur Kohli</label></div>
+			<br>
+	</body>
+</html>

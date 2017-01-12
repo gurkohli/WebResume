@@ -1,7 +1,7 @@
 var myResume = angular.module('myResume', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
 
 myResume.controller("rootCtrl", function($scope, $http, $sce) {
-	$http.get('www/data.json')
+	$http.get('www/main/data.json')
 			.then(function(res) {
 				$scope.model = res.data;
 			})

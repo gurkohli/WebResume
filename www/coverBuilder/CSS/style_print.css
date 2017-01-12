@@ -1,0 +1,12 @@
+.main {	
+	display: none;
+}
+
+.result label {
+	font-weight: 200;
+    font-size: 15px;
+}
+
+.multiline {
+	white-space: pre;
+}

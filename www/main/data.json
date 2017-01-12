@@ -72,7 +72,7 @@
          "description":"<p>Implemented an AngularJS web application front end interface that serves as a framework for software professionals working towards creating applications that log patient data.</p><p>Developed a template-based form input allowing doctors to input the patient's personal details and diagnosis details and view the data at the end in a summary layout.</p><p>Integrated Bootstrap CSS to implement an interactive and responsive user interface.</p><br>"
       },
       {
-         "printable":"true",
+         "printable":"false",
          "title":"Project LASER",
          "dates":"May - Aug 2013",
          "course":"Applied Sciences, Technology & Society (ENSC 106), SFU",
@@ -94,7 +94,7 @@
    	  	 "description":"<p>Mentored to and directed a mentee in both academic as well as non-academic related issues</p><p>Gained valuable management skills and experiences by listening to and analyzing mentee problems to identify an effective solutions</p>"
    	  },
    	  {
-          "printable":"true",
+          "printable":"false",
    	  	 "position":"New Students Orientation Leader",
    	  	 "dates":"September 2013",
    	  	 "location":"Fraser International College, Burnaby, BC",

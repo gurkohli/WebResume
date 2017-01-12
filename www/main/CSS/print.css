@@ -1,5 +1,6 @@
 body {
 	overflow: visible !important;
+	margin-top:0px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
@@ -8,6 +9,10 @@ span {
 	display: block;
 	vertical-align: middle;
 	padding: 5px;
+}
+
+hr {
+	margin-bottom:0px;
 }
 
 a:link:after, a:visited:after {  
@@ -80,7 +85,7 @@ a:link:after, a:visited:after {
 }
 
 .subheader-main {
-	font-size: 35px;
+	font-size: 30px;
 	width: 100%;
 	text-align: center;
 	font-weight: 200;
@@ -94,13 +99,13 @@ a:link:after, a:visited:after {
 	margin-bottom: 2px;
 }
 .entry-title {
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: 400;
 	margin: 0px;
 }
 
 .entry-dates {
-	font-size: 16px;
+	font-size: 13px;
 	font-weight: 400;
 	margin: 0px;
 	margin-top: 2px;
@@ -112,6 +117,7 @@ a:link:after, a:visited:after {
 }
 
 .entry-description {
+	font-size:13px;
 	padding-left: 7%;
 	text-align: justify;
 	font-weight: 200;
